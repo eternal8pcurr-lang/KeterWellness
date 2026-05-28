@@ -1,3 +1,0 @@
-[19-Sep-2022 20:45:04 UTC] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/blocks/archives.php' (include_path='.:/usr/local/php74/pear') in /home/customer/www/keterwellness.com/public_html/wp-includes/blocks/index.php on line 9
-[02-Nov-2022 13:11:51 UTC] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/blocks/archives.php' (include_path='.:/usr/local/php74/pear') in /home/customer/www/keterwellness.com/public_html/wp-includes/blocks/index.php on line 9
-[03-Nov-2022 21:27:08 UTC] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/blocks/archives.php' (include_path='.:/usr/local/php74/pear') in /home/customer/www/keterwellness.com/public_html/wp-includes/blocks/index.php on line 9
