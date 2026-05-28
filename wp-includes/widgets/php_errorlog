@@ -1,0 +1,4 @@
+[01-Dec-2022 21:39:51 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home/customer/www/keterwellness.com/public_html/wp-includes/widgets/class-wp-widget-tag-cloud.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/keterwellness.com/public_html/wp-includes/widgets/class-wp-widget-tag-cloud.php on line 17
