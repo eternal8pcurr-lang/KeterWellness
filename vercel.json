@@ -2,5 +2,9 @@
   "redirects": [
     { "source": "/tag/:path*", "destination": "/", "permanent": true },
     { "source": "/mucuna-l-dopa-20-extract-benefits", "destination": "/guide-to-mucuna-pruriens/", "permanent": true }
+{ "source": "/vitamins-benefits", "destination": "/guide-to-mucuna-pruriens/", "permanent": true }
+    { "source": "/is-black-seed-really-what-it-claims-to-be", "destination": "/guide-to-mucuna-pruriens/", "permanent": true }
+    { "source": "/best-supplements-for-cognitive-function", "destination": "/guide-to-mucuna-pruriens/", "permanent": true }
+    
   ]
 }
