@@ -1,11 +1,7 @@
 {
   "redirects": [
-    { "source": "/tag/tyrosine/", "destination": "/", "permanent": true },
-    { "source": "/tag/dopamine/", "destination": "/", "permanent": true },
-    { "source": "/tag/natural-dopamine/", "destination": "/", "permanent": true },
-    { "source": "/tag/increase-motivation/", "destination": "/", "permanent": true },
-    { "source": "/tag/ways-to-increase-dopamine-naturally/", "destination": "/", "permanent": true },
-    { "source": "/mucuna-l-dopa-20-extract-benefits/", "destination": "/", "permanent": true },
-    { "source": "/tag/best-mucuna-pruriens-supplement/", "destination": "/", "permanent": true }
+    { "source": "/tag/:path*", "destination": "/", "permanent": true },
+    { "source": "/mucuna-l-dopa-20-extract-benefits/", "destination": "/guide-to-mucuna-pruriens/", "permanent": true },
+    
   ]
 }
