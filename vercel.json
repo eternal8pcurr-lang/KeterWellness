@@ -5,6 +5,20 @@
     { "src": "/vitamins-benefits/?", "status": 301, "headers": { "Location": "/guide-to-mucuna-pruriens/" } },
     { "src": "/is-black-seed-really-what-it-claims-to-be/?", "status": 301, "headers": { "Location": "/guide-to-mucuna-pruriens/" } },
     { "src": "/best-supplements-for-cognitive-function/?", "status": 301, "headers": { "Location": "/guide-to-mucuna-pruriens/" } },
+    
+    { "src": "/category/mucuna-pruriens/?", "status": 301, "headers": { "Location": "/guide-to-mucuna-pruriens/" } },
+    { "src": "/category/stress-management/?", "status": 301, "headers": { "Location": "/guide-to-mucuna-pruriens/" } },
+    { "src": "/category/herbal-education/?", "status": 301, "headers": { "Location": "/guide-to-mucuna-pruriens/" } },
+    { "src": "/category/natural-remedies/?", "status": 301, "headers": { "Location": "/guide-to-mucuna-pruriens/" } },
+    { "src": "/author/keteradmin/?", "status": 301, "headers": { "Location": "/guide-to-mucuna-pruriens/" } },
+    { "src": "/category/health-articles/?", "status": 301, "headers": { "Location": "/guide-to-mucuna-pruriens/" } },
+    { "src": "/how-to-read-supplement-labels/?", "status": 301, "headers": { "Location": "/guide-to-mucuna-pruriens/" } },
+    { "src": "/category/trending/?", "status": 301, "headers": { "Location": "/guide-to-mucuna-pruriens/" } },
+    { "src": "/about-meditation/?", "status": 301, "headers": { "Location": "/guide-to-mucuna-pruriens/" } },
     { "handle": "filesystem" }
   ]
 }
+
+
+
+
