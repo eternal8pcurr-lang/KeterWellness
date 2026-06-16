@@ -1,7 +1,6 @@
 {
   "redirects": [
     { "source": "/tag/:path*", "destination": "/", "permanent": true },
-    { "source": "/mucuna-l-dopa-20-extract-benefits/", "destination": "/guide-to-mucuna-pruriens/", "permanent": true },
-    
+    { "source": "/mucuna-l-dopa-20-extract-benefits", "destination": "/guide-to-mucuna-pruriens/", "permanent": true }
   ]
 }
