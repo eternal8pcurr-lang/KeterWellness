@@ -1,11 +1,10 @@
 {
-  "redirects": [
-    { "source": "/tag/:path*", "destination": "/", "permanent": true },
-    { "source": "/mucuna-l-dopa-20-extract-benefits", "destination": "/guide-to-mucuna-pruriens/", "permanent": true },
-{ "source": "/vitamins-benefits", "destination": "/guide-to-mucuna-pruriens/", "permanent": true },
-    { "source": "/is-black-seed-really-what-it-claims-to-be", "destination": "/guide-to-mucuna-pruriens/", "permanent": true },
-    { "source": "/best-supplements-for-cognitive-function", "destination": "/guide-to-mucuna-pruriens/", "permanent": true }
-    
+  "routes": [
+    { "src": "/tag/(.*)", "status": 301, "headers": { "Location": "/" } },
+    { "src": "/mucuna-l-dopa-20-extract-benefits/?", "status": 301, "headers": { "Location": "/guide-to-mucuna-pruriens/" } },
+    { "src": "/vitamins-benefits/?", "status": 301, "headers": { "Location": "/guide-to-mucuna-pruriens/" } },
+    { "src": "/is-black-seed-really-what-it-claims-to-be/?", "status": 301, "headers": { "Location": "/guide-to-mucuna-pruriens/" } },
+    { "src": "/best-supplements-for-cognitive-function/?", "status": 301, "headers": { "Location": "/guide-to-mucuna-pruriens/" } },
+    { "handle": "filesystem" }
   ]
 }
-
