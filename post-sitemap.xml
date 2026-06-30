@@ -1,143 +1,255 @@
-<br />
-<b>Fatal error</b>:  Uncaught TypeError: Cannot access offset of type string on string in C:\Users\pete\Local Sites\keter-wellness\app\public\wp-content\plugins\insert-headers-and-footers\includes\class-wpcode-snippet-execute.php(419) : eval()'d code:6
-Stack trace:
-#0 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-includes\class-wp-hook.php(343): WPCode_Snippet_Execute-&gt;{closure}('\t&lt;url&gt;\n\t\t&lt;loc&gt;h...')
-#1 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-includes\plugin.php(256): WP_Hook-&gt;apply_filters('\t&lt;url&gt;\n\t\t&lt;loc&gt;h...', Array)
-#2 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-content\plugins\seo-by-rank-math\includes\traits\class-hooker.php(106): apply_filters_ref_array('rank_math/sitem...', Array)
-#3 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-content\plugins\seo-by-rank-math\includes\modules\sitemap\class-generator.php(313): RankMath\Sitemap\Generator-&gt;do_filter('sitemap/url', '\t&lt;url&gt;\n\t\t&lt;loc&gt;h...', Array)
-#4 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-content\plugins\seo-by-rank-math\includes\modules\sitemap\class-generator.php(245): RankMath\Sitemap\Generator-&gt;sitemap_url(Array)
-#5 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-content\plugins\seo-by-rank-math\includes\modules\sitemap\class-generator.php(174): RankMath\Sitemap\Generator-&gt;get_sitemap(Array, 'post', 1)
-#6 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-content\plugins\seo-by-rank-math\includes\modules\sitemap\class-generator.php(135): RankMath\Sitemap\Generator-&gt;build_sitemap('post', 1)
-#7 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-content\plugins\seo-by-rank-math\includes\modules\sitemap\class-sitemap-xml.php(166): RankMath\Sitemap\Generator-&gt;get_output('post', 1)
-#8 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-content\plugins\seo-by-rank-math\includes\modules\sitemap\class-sitemap-xml.php(93): RankMath\Sitemap\Sitemap_XML-&gt;build_sitemap()
-#9 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-content\plugins\seo-by-rank-math\includes\modules\sitemap\class-sitemap-xml.php(82): RankMath\Sitemap\Sitemap_XML-&gt;output()
-#10 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-content\plugins\seo-by-rank-math\includes\modules\sitemap\class-router.php(79): RankMath\Sitemap\Sitemap_XML-&gt;__construct('post')
-#11 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-includes\class-wp-hook.php(341): RankMath\Sitemap\Router-&gt;request_sitemap(Object(WP_Query))
-#12 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-includes\class-wp-hook.php(365): WP_Hook-&gt;apply_filters('', Array)
-#13 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-includes\plugin.php(570): WP_Hook-&gt;do_action(Array)
-#14 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-includes\class-wp-query.php(1154): do_action_ref_array('parse_query', Array)
-#15 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-includes\class-wp-query.php(1893): WP_Query-&gt;parse_query()
-#16 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-includes\class-wp-query.php(3954): WP_Query-&gt;get_posts()
-#17 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-includes\class-wp.php(704): WP_Query-&gt;query(Array)
-#18 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-includes\class-wp.php(824): WP-&gt;query_posts()
-#19 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-includes\functions.php(1343): WP-&gt;main('')
-#20 C:\Users\pete\Local Sites\keter-wellness\app\public\wp-blog-header.php(16): wp()
-#21 C:\Users\pete\Local Sites\keter-wellness\app\public\index.php(17): require('C:\\Users\\pete\\L...')
-#22 {main}
-  thrown in <b>C:\Users\pete\Local Sites\keter-wellness\app\public\wp-content\plugins\insert-headers-and-footers\includes\class-wpcode-snippet-execute.php(419) : eval()'d code</b> on line <b>6</b><br />
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name='robots' content='max-image-preview:large, noindex, follow' />
-	<title>WordPress &rsaquo; Error</title>
-	<style>
-		html {
-			background: #f1f1f1;
-		}
-		body {
-			background: #fff;
-			border: 1px solid #ccd0d4;
-			color: #444;
-			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-			margin: 2em auto;
-			padding: 1em 2em;
-			max-width: 700px;
-			-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
-			box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
-		}
-		h1 {
-			border-bottom: 1px solid #dadada;
-			clear: both;
-			color: #666;
-			font-size: 24px;
-			margin: 30px 0 0 0;
-			padding: 0;
-			padding-bottom: 7px;
-		}
-		#error-page {
-			margin-top: 50px;
-		}
-		#error-page p,
-		#error-page .wp-die-message {
-			font-size: 14px;
-			line-height: 1.5;
-			margin: 25px 0 20px;
-		}
-		#error-page code {
-			font-family: Consolas, Monaco, monospace;
-		}
-		ul li {
-			margin-bottom: 10px;
-			font-size: 14px ;
-		}
-		a {
-			color: #3858e9;
-		}
-		a:hover,
-		a:active {
-			color: #183ad6;
-		}
-		a:focus {
-			color: #183ad6;
-			box-shadow: 0 0 0 var(--wp-admin-border-width-focus, 1.5px) var(--wp-admin-theme-color, #3858e9);
-			outline: 2px solid transparent;
-		}
-		.button {
-			background: #f3f5f6;
-			border: 1px solid #016087;
-			color: #016087;
-			display: inline-block;
-			text-decoration: none;
-			font-size: 13px;
-			line-height: 2;
-			height: 28px;
-			margin: 0;
-			padding: 0 10px 1px;
-			cursor: pointer;
-			-webkit-border-radius: 3px;
-			-webkit-appearance: none;
-			border-radius: 3px;
-			white-space: nowrap;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing:    border-box;
-			box-sizing:         border-box;
-
-			vertical-align: top;
-		}
-
-		.button.button-large {
-			line-height: 2.30769231;
-			min-height: 32px;
-			padding: 0 12px;
-		}
-
-		.button:hover,
-		.button:focus {
-			background: #f1f1f1;
-		}
-
-		.button:focus {
-			background: #f3f5f6;
-			border-color: #007cba;
-			-webkit-box-shadow: 0 0 0 1px #007cba;
-			box-shadow: 0 0 0 1px #007cba;
-			color: #016087;
-			outline: 2px solid transparent;
-			outline-offset: 0;
-		}
-
-		.button:active {
-			background: #f3f5f6;
-			border-color: #7e8993;
-			-webkit-box-shadow: none;
-			box-shadow: none;
-		}
-
-			</style>
-</head>
-<body id="error-page">
-	<div class="wp-die-message"><p>There has been a critical error on this website.</p><p><a href="https://wordpress.org/documentation/article/faq-troubleshooting/">Learn more about troubleshooting WordPress.</a></p></div></body>
-</html>
-	<!-- Powered by Staatic (https://staatic.com/) -->
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/main-sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://www.keterwellness.com/keter-wellness-blog/</loc>
+		<lastmod>2026-06-11T16:37:10+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/MucunaPruriensDosageTiming.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/mucuna-pruriens-benefits-for-female-botanical-graphic.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/signs-of-low-dopamine-levels-mental-health.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/how-to-overcome-burnout-at-work-burnout-recovery.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/how-to-improve-work-performance-work-productivity.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/natural-supplements-for-focus-and-energy-productivity-banner.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/lack-of-motivation-scaled.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/mucuna-pruriens-vs-l-tyrosine-comparison-title.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/how-to-increase-productivity-at-work-work-productivity.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/alternatives-to-caffeine-for-energy-coffee-alternatives.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/mucuna-pruriens-dosage/</loc>
+		<lastmod>2026-06-30T21:40:22+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/mucunapruriensdosageandtiming.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/when-to-take-mucuna-morning-vs-evening-with-or-without-food/</loc>
+		<lastmod>2026-06-29T19:55:18+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/MucunaCoffee.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/guide-to-mucuna-pruriens/</loc>
+		<lastmod>2026-06-11T16:32:18+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/mucunapruriensvelvetbeanplant.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/Rawbeanpowdervsstandardizedextract.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/Image2-MucunaBenefits2-1024x683.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/what-causes-lack-of-motivation/</loc>
+		<lastmod>2026-06-11T16:27:44+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/mucuna-pruriens-vs-l-tyrosine/</loc>
+		<lastmod>2026-06-11T16:15:54+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/signs-of-low-dopamine-levels/</loc>
+		<lastmod>2026-06-11T16:06:13+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/best-mucuna-pruriens-supplement/</loc>
+		<lastmod>2026-05-29T21:02:56+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/supplements-gmp-certified/</loc>
+		<lastmod>2026-05-29T21:02:55+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/what-vitamins-should-i-be-taking-quiz/</loc>
+		<lastmod>2026-05-29T21:02:55+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/how-to-increase-dopamine-levels-naturally/</loc>
+		<lastmod>2026-05-29T21:02:55+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/ways-to-increase-dopamine-naturally/</loc>
+		<lastmod>2026-05-29T21:02:54+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/herbs-for-mental-clarity/</loc>
+		<lastmod>2026-05-29T21:02:54+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/natural-ways-to-increase-dopamine/</loc>
+		<lastmod>2026-05-29T21:02:54+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/best-supplements-for-mental-clarity/</loc>
+		<lastmod>2026-05-29T21:02:54+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/how-to-stay-focused-at-work/</loc>
+		<lastmod>2026-05-29T21:02:53+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/what-is-mucuna-pruriens/</loc>
+		<lastmod>2026-05-29T21:02:53+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/natural-ways-to-improve-focus-and-concentration/</loc>
+		<lastmod>2026-05-29T21:02:53+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/mucuna-pruriens-supplement/</loc>
+		<lastmod>2026-05-29T21:02:53+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/how-to-boost-mood-naturally/</loc>
+		<lastmod>2026-05-29T21:02:52+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/how-to-increase-productivity-at-work/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/natural-supplements-for-focus-and-energy/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/how-to-improve-work-performance/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/improving-workplace-productivity/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/dopa-mucuna-benefits/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/natural-stress-relief-supplements/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/mucuna-pruriens-dosage-for-depression/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/how-to-stay-motivated-at-work/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/best-nootropics-for-focus/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/how-to-increase-dopamine-naturally/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/mucuna-dopa-benefits/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/how-does-l-dopa-work/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/natural-dopamine-supplements/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/how-to-overcome-lack-of-motivation/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/herbal-stress-relief-supplements/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/how-to-overcome-brain-fog/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/how-long-does-it-take-supplements-to-work/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/benefits-of-mucuna/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/alternatives-to-caffeine-for-energy/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/how-to-overcome-burnout-at-work/</loc>
+		<lastmod>2026-05-29T21:01:10+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/mucuna-pruriens-benefits-for-female/</loc>
+		<lastmod>2026-05-29T21:00:34+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/natural-remedies-for-low-energy/</loc>
+		<lastmod>2026-05-27T19:59:13+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/how-to-improve-mental-clarity/</loc>
+		<lastmod>2026-05-27T00:23:15+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/standardized-mucuna-vs-raw-powder/</loc>
+		<lastmod>2025-12-15T17:26:55+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/mucuna-pruriens-libido-benefits/</loc>
+		<lastmod>2025-12-11T17:18:00+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/science-of-l-dopa-brain/</loc>
+		<lastmod>2025-12-10T22:04:59+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/How-L-Dopa-converts-to-dopamine-in-the-brain.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/mucuna-vs-coffee-energy/</loc>
+		<lastmod>2025-12-10T21:53:07+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/Focused-work-without-caffeine-jitters-1024x765.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/mucuna-vs-l-tyrosine-which-is-better-for-dopamine-support/</loc>
+		<lastmod>2025-10-01T17:51:29+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/what-are-the-benefits-of-mucuna-l-dopa/</loc>
+		<lastmod>2025-09-30T20:55:48+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/the-definitive-guide-to-mucuna-pruriens-l-dopa-benefits-how-it-works-dosage-and-safety/</loc>
+		<lastmod>2025-09-26T20:33:27+00:00</lastmod>
+	</url>
+</urlset>
+<!-- XML Sitemap generated by Rank Math SEO Plugin (c) Rank Math - rankmath.com -->
