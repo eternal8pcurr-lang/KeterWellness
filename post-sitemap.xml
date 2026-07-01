@@ -4,6 +4,9 @@
 		<loc>https://www.keterwellness.com/keter-wellness-blog/</loc>
 		<lastmod>2026-06-11T16:37:10+00:00</lastmod>
 		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/low-dopamine-symptoms.png</image:loc>
+		</image:image>
+		<image:image>
 			<image:loc>https://www.keterwellness.com/wp-content/uploads/MucunaPruriensDosageTiming.png</image:loc>
 		</image:image>
 		<image:image>
@@ -30,8 +33,12 @@
 		<image:image>
 			<image:loc>https://www.keterwellness.com/wp-content/uploads/how-to-increase-productivity-at-work-work-productivity.jpg</image:loc>
 		</image:image>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/what-do-low-dopamine-symptoms-feel-like/</loc>
+		<lastmod>2026-07-01T22:39:31+00:00</lastmod>
 		<image:image>
-			<image:loc>https://www.keterwellness.com/wp-content/uploads/alternatives-to-caffeine-for-energy-coffee-alternatives.jpg</image:loc>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/signs-low-dopamine-symptoms.png</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -126,7 +133,7 @@
 		<lastmod>2026-05-29T21:02:52+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://www.keterwellness.com/how-to-increase-productivity-at-work/</loc>
+		<loc>https://www.keterwellness.com/how-to-improve-work-performance/</loc>
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
 	<url>
@@ -134,11 +141,11 @@
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://www.keterwellness.com/how-to-improve-work-performance/</loc>
+		<loc>https://www.keterwellness.com/how-does-l-dopa-work/</loc>
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://www.keterwellness.com/improving-workplace-productivity/</loc>
+		<loc>https://www.keterwellness.com/mucuna-pruriens-dosage-for-depression/</loc>
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
 	<url>
@@ -146,11 +153,7 @@
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://www.keterwellness.com/natural-stress-relief-supplements/</loc>
-		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.keterwellness.com/mucuna-pruriens-dosage-for-depression/</loc>
+		<loc>https://www.keterwellness.com/how-long-does-it-take-supplements-to-work/</loc>
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
 	<url>
@@ -170,7 +173,7 @@
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://www.keterwellness.com/how-does-l-dopa-work/</loc>
+		<loc>https://www.keterwellness.com/natural-stress-relief-supplements/</loc>
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
 	<url>
@@ -190,7 +193,7 @@
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://www.keterwellness.com/how-long-does-it-take-supplements-to-work/</loc>
+		<loc>https://www.keterwellness.com/improving-workplace-productivity/</loc>
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
 	<url>
@@ -199,6 +202,10 @@
 	</url>
 	<url>
 		<loc>https://www.keterwellness.com/alternatives-to-caffeine-for-energy/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/how-to-increase-productivity-at-work/</loc>
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
 	<url>
