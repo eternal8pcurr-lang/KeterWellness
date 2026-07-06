@@ -4,6 +4,9 @@
 		<loc>https://www.keterwellness.com/keter-wellness-blog/</loc>
 		<lastmod>2026-07-06T19:59:01+00:00</lastmod>
 		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/Low-Dopamine-Symptoms-in-Women.png</image:loc>
+		</image:image>
+		<image:image>
 			<image:loc>https://www.keterwellness.com/wp-content/uploads/mucuna-low-dopamine-symptoms.png</image:loc>
 		</image:image>
 		<image:image>
@@ -30,15 +33,19 @@
 		<image:image>
 			<image:loc>https://www.keterwellness.com/wp-content/uploads/mucuna-pruriens-vs-l-tyrosine-comparison-title.jpg</image:loc>
 		</image:image>
-		<image:image>
-			<image:loc>https://www.keterwellness.com/wp-content/uploads/how-to-increase-productivity-at-work-work-productivity.jpg</image:loc>
-		</image:image>
 	</url>
 	<url>
 		<loc>https://www.keterwellness.com/what-do-low-dopamine-symptoms-feel-like/</loc>
-		<lastmod>2026-07-01T23:44:26+00:00</lastmod>
+		<lastmod>2026-07-06T21:30:57+00:00</lastmod>
 		<image:image>
 			<image:loc>https://www.keterwellness.com/wp-content/uploads/signs-low-dopamine-symptoms.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/low-dopamine-symptoms-in-women/</loc>
+		<lastmod>2026-07-06T21:27:13+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/LowDopamineHormonesWomen.png</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -137,10 +144,6 @@
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://www.keterwellness.com/natural-supplements-for-focus-and-energy/</loc>
-		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://www.keterwellness.com/how-does-l-dopa-work/</loc>
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
@@ -153,7 +156,7 @@
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://www.keterwellness.com/how-long-does-it-take-supplements-to-work/</loc>
+		<loc>https://www.keterwellness.com/benefits-of-mucuna/</loc>
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
 	<url>
@@ -197,7 +200,7 @@
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://www.keterwellness.com/benefits-of-mucuna/</loc>
+		<loc>https://www.keterwellness.com/how-long-does-it-take-supplements-to-work/</loc>
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
 	<url>
@@ -206,6 +209,10 @@
 	</url>
 	<url>
 		<loc>https://www.keterwellness.com/how-to-increase-productivity-at-work/</loc>
+		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.keterwellness.com/natural-supplements-for-focus-and-energy/</loc>
 		<lastmod>2026-05-29T21:02:27+00:00</lastmod>
 	</url>
 	<url>
