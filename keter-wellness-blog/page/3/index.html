@@ -379,7 +379,309 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 {"imports":{"@wordpress/interactivity":"/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=efaa5193bbad9c60ffd1"}}
 </script>
 <link rel="modulepreload" href="/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=efaa5193bbad9c60ffd1" id="@wordpress/interactivity-js-modulepreload" fetchpriority="low">
-<script src="https://analytics.ahrefs.com/analytics.js" data-key="na6g/zT2RrnpVhdFy9NWig" async></script><style class="wp-fonts-local">
+<style class="wpcode-css-snippet">/* Remove theme block-gap above the footer */
+.wp-site-blocks > footer.wp-block-template-part {
+  margin-block-start: 0;
+}</style><style class="wpcode-css-snippet">/* ==========================================================================
+   Keter Wellness &mdash; "About Us" page stylesheet
+   Add as a custom CSS file (Appearance > Editor > Styles, or a child-theme
+   stylesheet). Apply each class via the block's "Additional CSS class(es)"
+   field per the build guide. Uses theme vars --kw-orange (#E3A11E) and
+   --kw-tan (#F4EEE1); all other colors are literal hex per brand spec.
+   ========================================================================== */
+
+:root {
+  --kw-orange: #E3A11E;
+  --kw-tan: #F4EEE1;
+}
+
+/* ---- Shared type + kicker (reused across sections) -------------------- */
+
+.kw-about-kicker {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #C62B27;
+  margin-bottom: 14px !important;
+}
+
+.kw-about-display {
+  font-family: "Cormorant", serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1A1712;
+}
+
+.kw-about-body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #5f5748;
+}
+
+.kw-about-link {
+  color: #C62B27;
+  text-decoration: underline;
+  text-decoration-color: rgba(198, 43, 39, 0.35);
+  font-weight: 500;
+  font-size: 15px;
+}
+.kw-about-link:hover { color: #8E1F2E; text-decoration-color: rgba(142, 31, 46, 0.6); }
+
+/* ---- 1. Hero ------------------------------------------------------------ */
+
+.kw-about-hero {
+  background: var(--kw-tan);
+  padding: 96px 24px 88px;
+  text-align: center;
+  border-bottom: 1px solid rgba(26, 23, 18, 0.08);
+}
+.kw-about-hero__inner { max-width: 640px; margin: 0 auto; }
+.kw-about-hero__mark { width: 56px; height: 56px; margin: 0 auto 22px; }
+.kw-about-hero__kicker { color: #8E1F2E !important; margin-bottom: 22px !important; }
+.kw-about-hero__title {
+  font-family: "Cormorant", serif;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.08;
+  color: #1A1712;
+  margin: 0 0 22px !important;
+}
+.kw-about-hero__subline {
+  max-width: 480px;
+  margin: 0 auto !important;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #5f5748;
+}
+
+/* ---- 2. Our Story -------------------------------------------------------- */
+
+.kw-about-story { background: var(--kw-tan); padding: 88px 24px; }
+.kw-about-story__cols { max-width: 1080px; margin: 0 auto; align-items: flex-start !important; }
+.kw-about-story__title { font-size: 34px; margin: 0 0 20px !important; }
+.kw-about-story__text p { margin: 0 0 16px; }
+
+.kw-about-story__panel {
+  background: #ffffff;
+  border-left: 3px solid var(--kw-orange);
+  border-radius: 0 10px 10px 0;
+  padding: 32px 28px;
+}
+.kw-about-stat { margin-bottom: 24px; }
+.kw-about-stat:last-child { margin-bottom: 0; }
+.kw-about-stat__number {
+  font-family: "Cormorant", serif;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 1;
+  color: #C62B27;
+  margin: 0 !important;
+}
+.kw-about-stat__label { font-size: 13px; color: #6a6154; margin: 4px 0 0 !important; }
+.kw-about-stat__rule { background: rgba(26, 23, 18, 0.08); height: 1px; margin: 20px 0 !important; }
+
+/* ---- 3. Why Mucuna Pruriens --------------------------------------------- */
+
+.kw-about-mucuna { background: #ffffff; padding: 88px 24px; }
+.kw-about-mucuna__intro { max-width: 760px; margin: 0 auto !important; text-align: center; }
+.kw-about-mucuna__title { font-size: 34px; margin: 0 0 20px !important; }
+.kw-about-mucuna__intro .kw-about-body { max-width: 620px; margin: 0 auto !important; }
+
+.kw-about-facts { max-width: 1080px; margin: 48px auto 0 !important; }
+.kw-about-fact-card {
+  background: var(--kw-tan);
+  border-radius: 12px;
+  padding: 28px 24px;
+  text-align: center;
+}
+.kw-about-fact-card__number {
+  font-family: "Cormorant", serif;
+  font-weight: 600;
+  font-size: 26px;
+  color: #1A1712;
+  margin: 0 0 8px !important;
+}
+.kw-about-fact-card__label { font-size: 14px; color: #6a6154; margin: 0 !important; line-height: 1.5; }
+
+/* ---- 4. Why Only One Product -------------------------------------------- */
+
+.kw-about-onlyone { background: var(--kw-tan); padding: 88px 24px; }
+.kw-about-onlyone__intro { max-width: 640px; margin: 0 auto 48px !important; text-align: center; }
+.kw-about-onlyone__title { font-size: 34px; margin: 0 !important; }
+.kw-about-onlyone__cards { max-width: 1080px; margin: 0 auto !important; }
+
+.kw-about-diff-card {
+  background: #ffffff;
+  border-top: 3px solid var(--kw-orange);
+  border-radius: 10px;
+  padding: 32px 26px;
+}
+.kw-about-diff-card__title {
+  font-family: "Cormorant", serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #1A1712;
+  margin: 0 0 10px !important;
+}
+.kw-about-diff-card__text { font-size: 15px; line-height: 1.7; color: #6a6154; margin: 0 !important; }
+
+/* ---- 5. Our Standards ---------------------------------------------------- */
+
+.kw-about-standards { background: #ffffff; padding: 88px 24px; }
+.kw-about-standards__intro { max-width: 640px; margin: 0 auto 48px !important; text-align: center; }
+.kw-about-standards__title { font-size: 34px; margin: 0 !important; }
+.kw-about-standards__cards { max-width: 1080px; margin: 0 auto !important; }
+
+.kw-about-standard-card {
+  background: var(--kw-tan);
+  border-left: 3px solid var(--kw-orange);
+  border-radius: 0 10px 10px 0;
+  padding: 30px 26px;
+}
+.kw-about-standard-card__title {
+  font-family: "Cormorant", serif;
+  font-weight: 600;
+  font-size: 19px;
+  color: #1A1712;
+  margin: 0 0 10px !important;
+}
+.kw-about-standard-card__text { font-size: 14.5px; line-height: 1.7; color: #6a6154; margin: 0 !important; }
+
+.kw-about-coa-link-wrap { text-align: center; margin-top: 36px !important; }
+
+/* ---- 6. Closing ----------------------------------------------------------- */
+
+.kw-about-closing { background: #8E1F2E; padding: 96px 24px; text-align: center; }
+.kw-about-closing__inner { max-width: 560px; margin: 0 auto; }
+.kw-about-closing__signature { width: 220px; height: auto; margin: 0 auto 28px; }
+.kw-about-closing__quote {
+  font-family: "Cormorant", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.4;
+  color: var(--kw-tan);
+  margin: 0 0 20px !important;
+}
+.kw-about-closing__cta-title {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--kw-orange);
+  margin: 0 0 32px !important;
+}
+.kw-about-closing__rule {
+  background: rgba(227, 161, 30, 0.4);
+  height: 1px;
+  width: 64px;
+  margin: 0 auto 32px !important;
+}
+
+.kw-about-closing__buttons { justify-content: center !important; }
+.kw-about-closing__buttons .wp-block-button__link {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  border-radius: 6px;
+  padding: 14px 30px;
+}
+.kw-about-btn-outline .wp-block-button__link {
+  background: transparent;
+  border: 1.5px solid var(--kw-orange);
+  color: var(--kw-tan);
+}
+.kw-about-btn-outline .wp-block-button__link:hover { background: rgba(227, 161, 30, 0.12); }
+.kw-about-btn-fill .wp-block-button__link {
+  background: #C62B27;
+  color: var(--kw-tan);
+  border: none;
+}
+.kw-about-btn-fill .wp-block-button__link:hover { background: #8E1F2E; }
+
+/* ==========================================================================
+   Mobile &mdash; stack everything below 600px (matches core Columns breakpoint)
+   ========================================================================== */
+
+@media (max-width: 599px) {
+  .kw-about-hero { padding: 64px 20px 56px; }
+  .kw-about-hero__title { font-size: 38px !important; }
+  .kw-about-hero__subline { font-size: 16px !important; }
+
+  .kw-about-story,
+  .kw-about-mucuna,
+  .kw-about-onlyone,
+  .kw-about-standards { padding: 56px 20px; }
+
+  .kw-about-story__title,
+  .kw-about-mucuna__title,
+  .kw-about-onlyone__title,
+  .kw-about-standards__title { font-size: 27px !important; }
+
+  .kw-about-story__panel { margin-top: 32px; }
+
+  .kw-about-closing { padding: 64px 20px; }
+  .kw-about-closing__quote { font-size: 22px !important; }
+  .kw-about-closing__buttons { flex-direction: column !important; }
+  .kw-about-closing__buttons .wp-block-button { width: 100%; }
+  .kw-about-closing__buttons .wp-block-button__link { display: block; }
+}
+</style><style class="wpcode-css-snippet">/* === COA tables: stacked cards on mobile === */
+@media (max-width: 700px) {
+  .kw-coa-table table,
+  .kw-coa-table tbody,
+  .kw-coa-table tr,
+  .kw-coa-table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .kw-coa-table thead {
+    display: none;
+  }
+
+  .kw-coa-table tr {
+    background: #fff;
+    border: 1px solid #e2ded3;
+    border-left: 3px solid var(--kw-orange, #E3A11E);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .kw-coa-table td {
+    border: none;
+    padding: 0.2rem 0;
+    font-size: 15px;
+    line-height: 1.5;
+    word-break: normal;
+  }
+
+  /* First cell = card title */
+  .kw-coa-table td:first-child {
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 0.45rem;
+    margin-bottom: 0.45rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .kw-coa-table td:nth-child(2)::before { content: "Result: "; }
+  .kw-coa-table td:nth-child(3)::before { content: "Specification: "; }
+  .kw-coa-table td:nth-child(4)::before { content: "Method: "; }
+
+  .kw-coa-table td:nth-child(n+2)::before {
+    font-weight: 600;
+    color: #6b6455;
+  }
+}</style><script src="https://analytics.ahrefs.com/analytics.js" data-key="na6g/zT2RrnpVhdFy9NWig" async></script><style class="wp-fonts-local">
 @font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:fallback;src:url('/wp-content/themes/twentytwentyfive/assets/fonts/manrope/Manrope-VariableFont_wght.woff2') format('woff2');}
 @font-face{font-family:"Fira Code";font-style:normal;font-weight:300 700;font-display:fallback;src:url('/wp-content/themes/twentytwentyfive/assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2') format('woff2');}
 @font-face{font-family:Inter;font-style:normal;font-weight:100;font-display:fallback;src:url('https://www.keterwellness.com/wp-content/uploads/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyeMZ1rib2Bg-4.woff2') format('woff2');}
@@ -446,7 +748,7 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 						<div class="wp-block-navigation__responsive-dialog" data-wp-bind--aria-modal="state.ariaModal" data-wp-bind--aria-label="state.ariaLabel" data-wp-bind--role="state.roleAttribute">
 							<button aria-label="Close menu" class="wp-block-navigation__responsive-container-close" data-wp-on--click="actions.closeMenuOnClick"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="m13.06 12 6.47-6.47-1.06-1.06L12 10.94 5.53 4.47 4.47 5.53 10.94 12l-6.47 6.47 1.06 1.06L12 13.06l6.47 6.47 1.06-1.06L13.06 12Z"></path></svg></button>
 							<div class="wp-block-navigation__responsive-container-content" data-wp-watch="callbacks.focusFirstElement" id="modal-1-content">
-								<ul class="wp-block-navigation__container is-responsive items-justified-right is-vertical wp-block-navigation"><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/about-us/"><span class="wp-block-navigation-item__label">About Us</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/contact-us/"><span class="wp-block-navigation-item__label">Contact Us</span></a></li><li data-wp-context='{ "submenuOpenedBy": { "click": false, "hover": false, "focus": false }, "type": "submenu", "modal": null, "previousFocus": null }' data-wp-interactive="core/navigation" data-wp-on--focusout="actions.handleMenuFocusout" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-on--pointerenter="actions.openMenuOnHover" data-wp-on--pointerleave="actions.closeMenuOnHover" data-wp-watch="callbacks.initMenu" tabindex="-1" class="wp-block-navigation-item has-child open-on-hover-click wp-block-navigation-submenu"><a class="wp-block-navigation-item__content" href="/quality-testing/"><span class="wp-block-navigation-item__label">Quality &amp; Testing</span></a><button data-wp-bind--aria-expanded="state.isMenuOpen" data-wp-on--click="actions.toggleMenuOnClick" aria-label="Quality &amp; Testing submenu" class="wp-block-navigation__submenu-icon wp-block-navigation-submenu__toggle"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></button><ul data-wp-on--focus="actions.openMenuOnFocus" class="wp-block-navigation__submenu-container has-text-color has-contrast-color has-background has-base-background-color wp-block-navigation-submenu"><li data-wp-context='{ "submenuOpenedBy": { "click": false, "hover": false, "focus": false }, "type": "submenu", "modal": null, "previousFocus": null }' data-wp-interactive="core/navigation" data-wp-on--focusout="actions.handleMenuFocusout" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-on--pointerenter="actions.openMenuOnHover" data-wp-on--pointerleave="actions.closeMenuOnHover" data-wp-watch="callbacks.initMenu" tabindex="-1" class="wp-block-navigation-item has-child open-on-hover-click wp-block-navigation-submenu"><a class="wp-block-navigation-item__content" href="/quality-testing/coa/"><span class="wp-block-navigation-item__label">Certificates of Analysis (COAs)</span></a><button data-wp-bind--aria-expanded="state.isMenuOpen" data-wp-on--click="actions.toggleMenuOnClick" aria-label="Certificates of Analysis (COAs) submenu" class="wp-block-navigation__submenu-icon wp-block-navigation-submenu__toggle"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></button><ul data-wp-on--focus="actions.openMenuOnFocus" class="wp-block-navigation__submenu-container has-text-color has-contrast-color has-background has-base-background-color wp-block-navigation-submenu"><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/quality-testing/coa/coa-lot-090526-keter-wellness-mucuna-20-700mg-90-capsules/"><span class="wp-block-navigation-item__label">COA &mdash; Lot 090526</span></a></li><li class="wp-block-navigation-item open-on-hover-click wp-block-navigation-submenu"><a class="wp-block-navigation-item__content" href="/quality-testing/coa/lot-160925/"><span class="wp-block-navigation-item__label">COA &mdash; Lot 160925</span></a></li><li class="wp-block-navigation-item open-on-hover-click wp-block-navigation-submenu"><a class="wp-block-navigation-item__content" href="/quality-testing/coa/lot-181124/"><span class="wp-block-navigation-item__label">COA &mdash; Lot 181124</span></a></li></ul></li></ul></li><li class="wp-block-navigation-item current-menu-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/keter-wellness-blog/" aria-current="page"><span class="wp-block-navigation-item__label">Keter Wellness Blog</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/mucuna-l-dopa-20/"><span class="wp-block-navigation-item__label">Mucuna L-Dopa 20%</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/guide-to-mucuna-pruriens/"><span class="wp-block-navigation-item__label">Learn</span></a></li></ul>
+								<ul class="wp-block-navigation__container is-responsive items-justified-right is-vertical wp-block-navigation"><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/about-us/"><span class="wp-block-navigation-item__label">About Us</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/contact-us/"><span class="wp-block-navigation-item__label">Contact Us</span></a></li><li data-wp-context='{ "submenuOpenedBy": { "click": false, "hover": false, "focus": false }, "type": "submenu", "modal": null, "previousFocus": null }' data-wp-interactive="core/navigation" data-wp-on--focusout="actions.handleMenuFocusout" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-on--pointerenter="actions.openMenuOnHover" data-wp-on--pointerleave="actions.closeMenuOnHover" data-wp-watch="callbacks.initMenu" tabindex="-1" class="wp-block-navigation-item has-child open-on-hover-click wp-block-navigation-submenu"><a class="wp-block-navigation-item__content" href="/quality-testing/"><span class="wp-block-navigation-item__label">Quality &amp; Testing</span></a><button data-wp-bind--aria-expanded="state.isMenuOpen" data-wp-on--click="actions.toggleMenuOnClick" aria-label="Quality &amp; Testing submenu" class="wp-block-navigation__submenu-icon wp-block-navigation-submenu__toggle"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></button><ul data-wp-on--focus="actions.openMenuOnFocus" class="wp-block-navigation__submenu-container has-text-color has-contrast-color has-background has-base-background-color wp-block-navigation-submenu"><li data-wp-context='{ "submenuOpenedBy": { "click": false, "hover": false, "focus": false }, "type": "submenu", "modal": null, "previousFocus": null }' data-wp-interactive="core/navigation" data-wp-on--focusout="actions.handleMenuFocusout" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-on--pointerenter="actions.openMenuOnHover" data-wp-on--pointerleave="actions.closeMenuOnHover" data-wp-watch="callbacks.initMenu" tabindex="-1" class="wp-block-navigation-item has-child open-on-hover-click wp-block-navigation-submenu"><a class="wp-block-navigation-item__content" href="/quality-testing/coa/"><span class="wp-block-navigation-item__label">Certificates of Analysis (COAs)</span></a><button data-wp-bind--aria-expanded="state.isMenuOpen" data-wp-on--click="actions.toggleMenuOnClick" aria-label="Certificates of Analysis (COAs) submenu" class="wp-block-navigation__submenu-icon wp-block-navigation-submenu__toggle"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></button><ul data-wp-on--focus="actions.openMenuOnFocus" class="wp-block-navigation__submenu-container has-text-color has-contrast-color has-background has-base-background-color wp-block-navigation-submenu"><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/quality-testing/coa/coa-lot-090526-keter-wellness-mucuna-20-700mg-90-capsules/"><span class="wp-block-navigation-item__label">COA &mdash; Lot 090526</span></a></li><li class="wp-block-navigation-item open-on-hover-click wp-block-navigation-submenu"><a class="wp-block-navigation-item__content" href="/quality-testing/coa/lot-160925/"><span class="wp-block-navigation-item__label">COA &mdash; Lot 160925</span></a></li><li class="wp-block-navigation-item open-on-hover-click wp-block-navigation-submenu"><a class="wp-block-navigation-item__content" href="/quality-testing/coa/lot-010324/"><span class="wp-block-navigation-item__label">COA &mdash; Lot 010324</span></a></li></ul></li></ul></li><li class="wp-block-navigation-item current-menu-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/keter-wellness-blog/" aria-current="page"><span class="wp-block-navigation-item__label">Keter Wellness Blog</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/mucuna-l-dopa-20/"><span class="wp-block-navigation-item__label">Mucuna L-Dopa 20%</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/guide-to-mucuna-pruriens/"><span class="wp-block-navigation-item__label">Learn</span></a></li></ul>
 								
 							</div>
 						</div>
@@ -744,7 +1046,7 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 <script id="js-cookie-pys-js" defer src="/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3"></script>
 <script id="js-tld-js" defer src="/wp-content/plugins/pixelyoursite/dist/scripts/tld.min.js?ver=2.3.1"></script>
 <script id="pys-js-extra">
-var pysOptions = {"staticEvents":[],"dynamicEvents":{"automatic_event_form":{"ga":{"delay":0,"type":"dyn","name":"Form","trackingIds":["G-0R1JJJJJ54"],"eventID":"5a5f96c6-44bd-40a9-9c2b-774d9b869abc","params":{"page_title":"Keter Wellness","post_type":"page","plugin":"PixelYourSite","user_role":"guest","event_url":"www.keterwellness.local/keter-wellness-blog/page/3/"},"e_id":"automatic_event_form","ids":[],"hasTimeWindow":false,"timeWindow":0,"pixelIds":[],"woo_order":"","edd_order":""}},"automatic_event_download":{"ga":{"delay":0,"type":"dyn","name":"Download","extensions":["","doc","exe","js","pdf","ppt","tgz","zip","xls"],"trackingIds":["G-0R1JJJJJ54"],"eventID":"1b67d204-1949-4d01-91ee-f25e3c668dec","params":{"page_title":"Keter Wellness","post_type":"page","plugin":"PixelYourSite","user_role":"guest","event_url":"www.keterwellness.local/keter-wellness-blog/page/3/"},"e_id":"automatic_event_download","ids":[],"hasTimeWindow":false,"timeWindow":0,"pixelIds":[],"woo_order":"","edd_order":""}},"automatic_event_comment":{"ga":{"delay":0,"type":"dyn","name":"Comment","trackingIds":["G-0R1JJJJJ54"],"eventID":"4dbd4a3b-76a3-450c-978e-e243d1dfdef9","params":{"page_title":"Keter Wellness","post_type":"page","plugin":"PixelYourSite","user_role":"guest","event_url":"www.keterwellness.local/keter-wellness-blog/page/3/"},"e_id":"automatic_event_comment","ids":[],"hasTimeWindow":false,"timeWindow":0,"pixelIds":[],"woo_order":"","edd_order":""}},"automatic_event_scroll":{"ga":{"delay":0,"type":"dyn","name":"PageScroll","scroll_percent":30,"trackingIds":["G-0R1JJJJJ54"],"eventID":"631905d1-f5d0-46fb-9395-bc884f45193d","params":{"page_title":"Keter Wellness","post_type":"page","plugin":"PixelYourSite","user_role":"guest","event_url":"www.keterwellness.local/keter-wellness-blog/page/3/"},"e_id":"automatic_event_scroll","ids":[],"hasTimeWindow":false,"timeWindow":0,"pixelIds":[],"woo_order":"","edd_order":""}},"automatic_event_time_on_page":{"ga":{"delay":0,"type":"dyn","name":"TimeOnPage","time_on_page":30,"trackingIds":["G-0R1JJJJJ54"],"eventID":"59093492-1e5f-44e4-bfd9-cc3a484ffa49","params":{"page_title":"Keter Wellness","post_type":"page","plugin":"PixelYourSite","user_role":"guest","event_url":"www.keterwellness.local/keter-wellness-blog/page/3/"},"e_id":"automatic_event_time_on_page","ids":[],"hasTimeWindow":false,"timeWindow":0,"pixelIds":[],"woo_order":"","edd_order":""}}},"triggerEvents":[],"triggerEventTypes":[],"ga":{"trackingIds":["G-0R1JJJJJ54"],"commentEventEnabled":true,"downloadEnabled":true,"formEventEnabled":true,"crossDomainEnabled":false,"crossDomainAcceptIncoming":false,"crossDomainDomains":[],"isDebugEnabled":[],"serverContainerUrls":{"G-0R1JJJJJ54":{"enable_server_container":"","server_container_url":"","transport_url":""}},"additionalConfig":{"G-0R1JJJJJ54":{"first_party_collection":true}},"disableAdvertisingFeatures":false,"disableAdvertisingPersonalization":false,"wooVariableAsSimple":true,"custom_page_view_event":false},"debug":"","siteUrl":"/","ajaxUrl":"/wp-admin/admin-ajax.php","ajax_event":"4951075e8d","enable_remove_download_url_param":"1","cookie_duration":"7","last_visit_duration":"60","enable_success_send_form":"","ajaxForServerEvent":"1","ajaxForServerStaticEvent":"1","useSendBeacon":"1","send_external_id":"1","external_id_expire":"180","track_cookie_for_subdomains":"1","google_consent_mode":"1","gdpr":{"ajax_enabled":true,"all_disabled_by_api":false,"facebook_disabled_by_api":false,"analytics_disabled_by_api":false,"google_ads_disabled_by_api":false,"pinterest_disabled_by_api":false,"bing_disabled_by_api":false,"reddit_disabled_by_api":false,"externalID_disabled_by_api":false,"facebook_prior_consent_enabled":true,"analytics_prior_consent_enabled":true,"google_ads_prior_consent_enabled":null,"pinterest_prior_consent_enabled":true,"bing_prior_consent_enabled":true,"cookiebot_integration_enabled":false,"cookiebot_facebook_consent_category":"marketing","cookiebot_analytics_consent_category":"statistics","cookiebot_tiktok_consent_category":"marketing","cookiebot_google_ads_consent_category":"marketing","cookiebot_pinterest_consent_category":"marketing","cookiebot_bing_consent_category":"marketing","consent_magic_integration_enabled":false,"real_cookie_banner_integration_enabled":false,"cookie_notice_integration_enabled":false,"cookie_law_info_integration_enabled":false,"analytics_storage":{"enabled":true,"value":"granted","filter":false},"ad_storage":{"enabled":true,"value":"granted","filter":false},"ad_user_data":{"enabled":true,"value":"granted","filter":false},"ad_personalization":{"enabled":true,"value":"granted","filter":false}},"cookie":{"disabled_all_cookie":false,"disabled_start_session_cookie":false,"disabled_advanced_form_data_cookie":false,"disabled_landing_page_cookie":false,"disabled_first_visit_cookie":false,"disabled_trafficsource_cookie":false,"disabled_utmTerms_cookie":false,"disabled_utmId_cookie":false},"tracking_analytics":{"TrafficLanding":"/keter-wellness-blog/page/3/","TrafficUtms":[],"TrafficUtmsId":[]},"GATags":{"ga_datalayer_type":"default","ga_datalayer_name":"dataLayerPYS"},"woo":{"enabled":false},"edd":{"enabled":false},"cache_bypass":"1783373936"};
+var pysOptions = {"staticEvents":[],"dynamicEvents":{"automatic_event_form":{"ga":{"delay":0,"type":"dyn","name":"Form","trackingIds":["G-0R1JJJJJ54"],"eventID":"f53b00d8-926c-4196-b58d-be653d0b16f0","params":{"page_title":"Keter Wellness","post_type":"page","plugin":"PixelYourSite","user_role":"guest","event_url":"www.keterwellness.local/keter-wellness-blog/page/3/"},"e_id":"automatic_event_form","ids":[],"hasTimeWindow":false,"timeWindow":0,"pixelIds":[],"woo_order":"","edd_order":""}},"automatic_event_download":{"ga":{"delay":0,"type":"dyn","name":"Download","extensions":["","doc","exe","js","pdf","ppt","tgz","zip","xls"],"trackingIds":["G-0R1JJJJJ54"],"eventID":"35e21d2f-6876-4653-ad71-3000dae65c8f","params":{"page_title":"Keter Wellness","post_type":"page","plugin":"PixelYourSite","user_role":"guest","event_url":"www.keterwellness.local/keter-wellness-blog/page/3/"},"e_id":"automatic_event_download","ids":[],"hasTimeWindow":false,"timeWindow":0,"pixelIds":[],"woo_order":"","edd_order":""}},"automatic_event_comment":{"ga":{"delay":0,"type":"dyn","name":"Comment","trackingIds":["G-0R1JJJJJ54"],"eventID":"592012be-9a34-48c5-a2c8-d4e0e233085a","params":{"page_title":"Keter Wellness","post_type":"page","plugin":"PixelYourSite","user_role":"guest","event_url":"www.keterwellness.local/keter-wellness-blog/page/3/"},"e_id":"automatic_event_comment","ids":[],"hasTimeWindow":false,"timeWindow":0,"pixelIds":[],"woo_order":"","edd_order":""}},"automatic_event_scroll":{"ga":{"delay":0,"type":"dyn","name":"PageScroll","scroll_percent":30,"trackingIds":["G-0R1JJJJJ54"],"eventID":"5f4ef7c3-d5d7-433f-9c0a-f6fc3ced31cd","params":{"page_title":"Keter Wellness","post_type":"page","plugin":"PixelYourSite","user_role":"guest","event_url":"www.keterwellness.local/keter-wellness-blog/page/3/"},"e_id":"automatic_event_scroll","ids":[],"hasTimeWindow":false,"timeWindow":0,"pixelIds":[],"woo_order":"","edd_order":""}},"automatic_event_time_on_page":{"ga":{"delay":0,"type":"dyn","name":"TimeOnPage","time_on_page":30,"trackingIds":["G-0R1JJJJJ54"],"eventID":"11039c34-116a-44a2-bb68-493b507d4428","params":{"page_title":"Keter Wellness","post_type":"page","plugin":"PixelYourSite","user_role":"guest","event_url":"www.keterwellness.local/keter-wellness-blog/page/3/"},"e_id":"automatic_event_time_on_page","ids":[],"hasTimeWindow":false,"timeWindow":0,"pixelIds":[],"woo_order":"","edd_order":""}}},"triggerEvents":[],"triggerEventTypes":[],"ga":{"trackingIds":["G-0R1JJJJJ54"],"commentEventEnabled":true,"downloadEnabled":true,"formEventEnabled":true,"crossDomainEnabled":false,"crossDomainAcceptIncoming":false,"crossDomainDomains":[],"isDebugEnabled":[],"serverContainerUrls":{"G-0R1JJJJJ54":{"enable_server_container":"","server_container_url":"","transport_url":""}},"additionalConfig":{"G-0R1JJJJJ54":{"first_party_collection":true}},"disableAdvertisingFeatures":false,"disableAdvertisingPersonalization":false,"wooVariableAsSimple":true,"custom_page_view_event":false},"debug":"","siteUrl":"/","ajaxUrl":"/wp-admin/admin-ajax.php","ajax_event":"500a34072b","enable_remove_download_url_param":"1","cookie_duration":"7","last_visit_duration":"60","enable_success_send_form":"","ajaxForServerEvent":"1","ajaxForServerStaticEvent":"1","useSendBeacon":"1","send_external_id":"1","external_id_expire":"180","track_cookie_for_subdomains":"1","google_consent_mode":"1","gdpr":{"ajax_enabled":true,"all_disabled_by_api":false,"facebook_disabled_by_api":false,"analytics_disabled_by_api":false,"google_ads_disabled_by_api":false,"pinterest_disabled_by_api":false,"bing_disabled_by_api":false,"reddit_disabled_by_api":false,"externalID_disabled_by_api":false,"facebook_prior_consent_enabled":true,"analytics_prior_consent_enabled":true,"google_ads_prior_consent_enabled":null,"pinterest_prior_consent_enabled":true,"bing_prior_consent_enabled":true,"cookiebot_integration_enabled":false,"cookiebot_facebook_consent_category":"marketing","cookiebot_analytics_consent_category":"statistics","cookiebot_tiktok_consent_category":"marketing","cookiebot_google_ads_consent_category":"marketing","cookiebot_pinterest_consent_category":"marketing","cookiebot_bing_consent_category":"marketing","consent_magic_integration_enabled":false,"real_cookie_banner_integration_enabled":false,"cookie_notice_integration_enabled":false,"cookie_law_info_integration_enabled":false,"analytics_storage":{"enabled":true,"value":"granted","filter":false},"ad_storage":{"enabled":true,"value":"granted","filter":false},"ad_user_data":{"enabled":true,"value":"granted","filter":false},"ad_personalization":{"enabled":true,"value":"granted","filter":false}},"cookie":{"disabled_all_cookie":false,"disabled_start_session_cookie":false,"disabled_advanced_form_data_cookie":false,"disabled_landing_page_cookie":false,"disabled_first_visit_cookie":false,"disabled_trafficsource_cookie":false,"disabled_utmTerms_cookie":false,"disabled_utmId_cookie":false},"tracking_analytics":{"TrafficLanding":"/keter-wellness-blog/page/3/","TrafficUtms":[],"TrafficUtmsId":[]},"GATags":{"ga_datalayer_type":"default","ga_datalayer_name":"dataLayerPYS"},"woo":{"enabled":false},"edd":{"enabled":false},"cache_bypass":"1783448027"};
 //# sourceURL=pys-js-extra
 </script>
 <script id="pys-js" defer src="/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=11.2.0.6"></script>
