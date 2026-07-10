@@ -2,12 +2,54 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.keterwellness.com/</loc>
-		<lastmod>2026-07-07T16:08:39+00:00</lastmod>
+		<lastmod>2026-07-08T01:24:10+00:00</lastmod>
 		<image:image>
-			<image:loc>https://www.keterwellness.com/wp-content/uploads/01-FullTopImage-KeterWellness.jpg</image:loc>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/keterwellness_happy-smiling-couple-in-love-scaled.webp</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/MucunaBottleImage-Cropped-164x300.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/buy-on-amazon-button-png-3-300x111.png</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>https://www.keterwellness.com/wp-content/uploads/buy-on-amazon-button-png-3.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/81BtsfEdkQL._AC_SL1500_.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/MucunaBottleImage-Cropped-164x300.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/mood-motivation-icon-150x150.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/focus-brain-health-icon-150x150.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/vitality-libido-icon-150x150.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/KeterAmazonContentReviews-1024x640.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/how-long-does-mucuna-pruriens-take-to-work-featured-1024x683.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/Low-Dopamine-Symptoms-in-Women-1024x576.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/mucuna-low-dopamine-symptoms-1024x683.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/MucunaPruriensDosageTiming-1024x683.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/mucuna-pruriens-benefits-for-female-botanical-graphic-1024x574.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.keterwellness.com/wp-content/uploads/signs-of-low-dopamine-levels-mental-health-1024x574.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -16,10 +58,6 @@
 		<image:image>
 			<image:loc>https://www.keterwellness.com/wp-content/uploads/PeteCurringtonSignatureKeterWellness2.png</image:loc>
 		</image:image>
-	</url>
-	<url>
-		<loc>https://www.keterwellness.com/author/</loc>
-		<lastmod>2026-07-07T17:02:34+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.keterwellness.com/quality-testing/</loc>
@@ -67,16 +105,8 @@
 		<lastmod>2025-12-12T21:31:15+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://www.keterwellness.com/order-complete/</loc>
-		<lastmod>2017-04-07T18:24:20+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://www.keterwellness.com/privacy-policy/</loc>
 		<lastmod>2016-06-22T22:15:42+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://www.keterwellness.com/my-account/</loc>
-		<lastmod>2016-03-09T18:50:30+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.keterwellness.com/refund-policy/</loc>
